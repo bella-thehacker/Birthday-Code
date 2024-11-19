@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <script src="index.js"></script>
+ 		<link rel = "stylesheet" type = "text/css" media = "all" href = "birthday.css"/>
+        <title>Happy Birthday!!!</title>
+    </head>
+    <body onload="init();" >
+        <h1>Happy Birthday [name]!!!</h1>
+
+        <div class="instructions-container" style="display:block;">
+            <p>Pick a choice between <button id="mic">Mic</button> or <button id="cursor">Cursor</button> to blow candle.</p>
+        </div>
+
+        <div id="instructions">
+            <p id="cursorInstructions">Swipe your cursor close to the flame to put it out.</p>
+            <p id="micInstructions">Blow on the flame to put it out.</p>
+        </div>
+
+        <div class="cake-container">
+            <div id="candles-container"></div>
+             <div id="flame"></div>
+        <div class="cake" >
+            <div class="icing">
+                <div class="drip"></div>
+                <div class="drip"></div>
+                <div class="drip"></div>
+                <div class="drip"></div>
+                <div class="drip"></div>
+            </div>
+            <div class="layer top"></div>
+            <div class="layer middle"></div>
+            <div class="layer bottom"></div>
+        </div>
+        </div>
+        <div id="message_container" class="message"></div>
+    </body>
+</html>
