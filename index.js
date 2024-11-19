@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const candlesContainer = document.getElementById("candles-container");
 
-    // Function to create and append candles
+    
     function appendCandles(candlesCount = 5) {
         candlesContainer.style.display = "grid";
         candlesContainer.style.gridTemplateColumns = `repeat(${candlesCount}, 1fr)`;
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
             const candle = document.createElement("div");
             candle.classList.add("candle");
 
-            // Add flame to each candle
+            
             const candleFlame = document.createElement("div");
             candleFlame.classList.add("flame");
             candle.appendChild(candleFlame);
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", function () {
         videoContainer.style.zIndex = "9999";
     
         const video = document.createElement("video");
-        video.src = "bensoul-thick-thighs.mp4"; // Updated path
+        video.src = "bensoul-thick-thighs.mp4"; 
         video.controls = true;
         video.autoplay = true;
         video.style.width = "100%";
@@ -77,7 +77,7 @@ document.addEventListener("DOMContentLoaded", function () {
         videoContainer.appendChild(video);
         document.body.appendChild(videoContainer);
     
-        // Exit full screen on click
+        
         videoContainer.addEventListener("click", () => {
             video.pause();
             document.body.removeChild(videoContainer);
@@ -87,9 +87,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function monitorCandles() {
         if (checkAllCandlesBlownOut()) {
-            setTimeout(playCelebrationVideo, 2000); // Delay of 2 seconds
+            setTimeout(playCelebrationVideo, 2000); 
         } else {
-            setTimeout(monitorCandles, 500); // Check every 0.5 seconds
+            setTimeout(monitorCandles, 500); 
         }
     }
 
